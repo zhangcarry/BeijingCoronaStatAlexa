@@ -29,12 +29,12 @@ public class CustomLaunchRequestHandler implements LaunchRequestHandler {
                     response += "1 active case of coronavirus has been reported in Beijing as of today, ";
                     break;
                 default:
-                    response += "There're "+active+" active  coronavirus cases in Beijing as of today, ";
+                    response += "There're "+active+" active coronavirus cases in Beijing as of today, ";
                     break;
             }
             int death = coronaCase.getDeath();
             int confirmed = coronaCase.getConfirmed();
-            response += "bring a total of "+confirmed+" cases, ";
+            response += "bringing a total of "+confirmed+" cases, ";
             switch (death) {
                 case 0:
                     response += "with no deaths recorded.";
